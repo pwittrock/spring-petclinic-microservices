@@ -1,0 +1,12 @@
+steps:
+- name: gcr.io/cloud-builders/maven
+  args: ['./mvnw', 'clean', 'install', '-PbuildDocker', '-DdockerImageTags=${TAG_NAME}']
+images:
+- gcr.io/protokit-238521/spring-petclinic-hystrix-dashboard:${TAG_NAME}
+- gcr.io/protokit-238521/spring-petclinic-api-gateway:${TAG_NAME}
+- gcr.io/protokit-238521/spring-petclinic-discovery-server:${TAG_NAME}
+- gcr.io/protokit-238521/spring-petclinic-config-server:${TAG_NAME}
+- gcr.io/protokit-238521/spring-petclinic-visits-service:${TAG_NAME}
+- gcr.io/protokit-238521/spring-petclinic-vets-service:${TAG_NAME}
+- gcr.io/protokit-238521/spring-petclinic-customers-service:${TAG_NAME}
+- gcr.io/protokit-238521/spring-petclinic-admin-server:${TAG_NAME}
