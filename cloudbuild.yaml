@@ -1,6 +1,6 @@
 steps:
-- name: gcr.io/cloud-builders/maven
-  args: ['./mvnw', 'clean', 'install', '-PbuildDocker', '-DdockerImageTags=${TAG_NAME}']
+- name: gcr.io/cloud-builders/mvn
+  args: ['clean', 'install', '-PbuildDocker', '-DdockerImageTags=${TAG_NAME}']
 images:
 - gcr.io/protokit-238521/spring-petclinic-hystrix-dashboard:${TAG_NAME}
 - gcr.io/protokit-238521/spring-petclinic-api-gateway:${TAG_NAME}
