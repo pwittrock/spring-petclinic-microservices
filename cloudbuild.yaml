@@ -1,5 +1,5 @@
 steps:
-- name: gcr.io/cloud-builders/mvn
+- name: mvn:3-jdk-8
   args: ['clean', 'install', '-PbuildDocker', '-DdockerImageTags=${TAG_NAME}']
 images:
 - gcr.io/protokit-238521/spring-petclinic-hystrix-dashboard:${TAG_NAME}
