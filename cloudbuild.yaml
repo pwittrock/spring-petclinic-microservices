@@ -1,5 +1,5 @@
 steps:
-- name: mvn:3-jdk-8
+- name: maven:3-jdk-8
   entrypoint: 'mvn'
   args: ['clean', 'install', '-PbuildDocker', '-DdockerImageTags=${TAG_NAME}']
 images:
