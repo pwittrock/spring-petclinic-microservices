@@ -13,3 +13,6 @@ spring:
       server:
         git:
           uri: file:///${GIT_REPO}
+  eureka:
+    instance:
+      preferIpAddress: true
