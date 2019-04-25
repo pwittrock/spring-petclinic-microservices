@@ -15,4 +15,5 @@ spring:
           uri: file:///${GIT_REPO}
   eureka:
     instance:
-      preferIpAddress: true
+      hostname: config-server
+      preferIpAddress: false

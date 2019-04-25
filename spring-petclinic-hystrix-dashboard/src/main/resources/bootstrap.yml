@@ -12,4 +12,5 @@ spring:
       uri: http://config-server:8888
   eureka:
     instance:
-      preferIpAddress: true
+      hostname: hystrix-dashboard
+      erIpAddress: true
