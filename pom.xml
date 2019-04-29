@@ -70,10 +70,10 @@
                 <version>${assertj.version}</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
+                <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
-                <scope>runtime</scope>
+                <version>1.4.197</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -183,6 +183,11 @@
             <id>repository.spring.milestone</id>
             <name>Spring Milestone Repository</name>
             <url>http://repo.spring.io/milestone</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>http://repo1.maven.org/maven2/</url>
         </repository>
     </repositories>
 
